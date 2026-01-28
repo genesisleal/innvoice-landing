@@ -1,0 +1,57 @@
+import { useState } from "react"
+import "./Navbar.css"
+
+const NAV_LINKS = [
+  { label: "Inicio", href: "#hero" },
+  { label: "Funciones", href: "#features" },
+  { label: "Como Funciona", href: "#how-it-works" },
+  { label: "Planes", href: "#pricing" },
+  { label: "Contacto", href: "#cta" },
+]
+
+export default function Navbar() {
+  const [open, setOpen] = useState(false)
+
+  return (
+    <nav className="navbar">
+      <div className="container navbar-inner">
+        <a href="#hero" className="navbar-logo">
+          <img src="/logo-innvoice.png" alt="Innvoice" />
+        </a>
+
+        <ul className={`navbar-links ${open ? "navbar-links--open" : ""}`}>
+          {NAV_LINKS.map((link) => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                className="navbar-link"
+                onClick={() => setOpen(false)}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+          <li className="navbar-cta-mobile">
+            <a href="#cta" className="btn btn-primary" onClick={() => setOpen(false)}>
+              Solicitar Demo
+            </a>
+          </li>
+        </ul>
+
+        <a href="#cta" className="btn btn-primary navbar-cta-desktop">
+          Solicitar Demo
+        </a>
+
+        <button
+          className={`navbar-toggle ${open ? "navbar-toggle--open" : ""}`}
+          onClick={() => setOpen(!open)}
+          aria-label="Menu"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
+    </nav>
+  )
+}
