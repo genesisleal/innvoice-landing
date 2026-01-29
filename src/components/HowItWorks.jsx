@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react"
 import "./HowItWorks.css"
 
 const STEPS = [
@@ -18,7 +19,51 @@ const STEPS = [
   },
 ]
 
+function useScrollReveal(containerRef) {
+  useEffect(() => {
+    const container = containerRef.current
+    if (!container) return
+
+    const items = container.querySelectorAll(".timeline-item")
+    const line = container.querySelector(".timeline-line-fill")
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed")
+          }
+        })
+      },
+      { threshold: 0.3, rootMargin: "0px 0px -60px 0px" }
+    )
+
+    items.forEach((item) => observer.observe(item))
+
+    const lineObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            line?.classList.add("line-grow")
+          }
+        })
+      },
+      { threshold: 0.1 }
+    )
+
+    if (line) lineObserver.observe(container)
+
+    return () => {
+      items.forEach((item) => observer.unobserve(item))
+      if (container) lineObserver.unobserve(container)
+    }
+  }, [containerRef])
+}
+
 export default function HowItWorks() {
+  const timelineRef = useRef(null)
+  useScrollReveal(timelineRef)
+
   return (
     <section id="how-it-works" className="how-it-works section">
       <div className="container">
@@ -28,16 +73,27 @@ export default function HowItWorks() {
           De contacto a factura, en un mismo flujo. Menos clics, mas control.
         </p>
 
-        <div className="steps">
-          <div className="steps-line" />
+        <div className="timeline" ref={timelineRef}>
+          <div className="timeline-line">
+            <div className="timeline-line-fill" />
+          </div>
+
           {STEPS.map((step, i) => (
-            <div key={step.number} className="step">
-              <div className="step-marker">
-                <span className="step-number">{step.number}</span>
+            <div
+              key={step.number}
+              className={`timeline-item ${i % 2 === 0 ? "timeline-left" : "timeline-right"}`}
+              style={{ transitionDelay: `${i * 200}ms` }}
+            >
+              <div className="timeline-content">
+                <h3 className="timeline-step-title">{step.title}</h3>
+                <p className="timeline-step-description">{step.description}</p>
               </div>
-              <div className="step-bg-number">{step.number}</div>
-              <h3 className="step-title">{step.title}</h3>
-              <p className="step-description">{step.description}</p>
+
+              <div className="timeline-dot">
+                <span className="timeline-dot-number">{step.number}</span>
+              </div>
+
+              <div className="timeline-spacer" />
             </div>
           ))}
         </div>
