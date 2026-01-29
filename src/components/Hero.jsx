@@ -1,8 +1,37 @@
+import { useRef, useState, useEffect } from "react"
 import "./Hero.css"
 
 export default function Hero() {
+  const dashRef = useRef(null)
+  const [tilt, setTilt] = useState({ x: 0, y: 0, gx: 50, gy: 50 })
+  const [isHovering, setIsHovering] = useState(false)
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoaded(true), 100)
+    return () => clearTimeout(timer)
+  }, [])
+
+  function handleMouseMove(e) {
+    const rect = dashRef.current.getBoundingClientRect()
+    const x = (e.clientX - rect.left) / rect.width
+    const y = (e.clientY - rect.top) / rect.height
+    const tiltX = (y - 0.5) * -12
+    const tiltY = (x - 0.5) * 12
+    setTilt({ x: tiltX, y: tiltY, gx: x * 100, gy: y * 100 })
+  }
+
+  function handleMouseEnter() {
+    setIsHovering(true)
+  }
+
+  function handleMouseLeave() {
+    setIsHovering(false)
+    setTilt({ x: 0, y: 0, gx: 50, gy: 50 })
+  }
+
   return (
-    <section id="hero" className="hero section">
+    <section id="hero" className={`hero section ${loaded ? "hero--loaded" : ""}`}>
       <div className="container hero-container">
         <span className="hero-badge">CRM + ERP + Facturacion SUNAT</span>
 
@@ -29,8 +58,28 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="hero-dashboard">
-          <div className="hero-dashboard-window">
+        <div
+          ref={dashRef}
+          className={`hero-dashboard ${isHovering ? "hero-dashboard--active" : ""}`}
+          onMouseMove={handleMouseMove}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <div
+            className="hero-dashboard-glow"
+            style={{
+              background: `radial-gradient(600px circle at ${tilt.gx}% ${tilt.gy}%, rgba(0, 68, 215, 0.12), transparent 50%)`,
+            }}
+          />
+          <div
+            className="hero-dashboard-window"
+            style={{
+              transform: isHovering
+                ? `perspective(1000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) scale3d(1.02, 1.02, 1.02)`
+                : "perspective(1000px) rotateX(2deg) rotateY(0deg) scale3d(1, 1, 1)",
+            }}
+          >
+            <div className="hero-dashboard-shine" />
             <div className="hero-dashboard-topbar">
               <div className="hero-dashboard-dots">
                 <span />
