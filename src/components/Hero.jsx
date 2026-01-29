@@ -88,73 +88,231 @@ export default function Hero() {
               </div>
               <div className="hero-dashboard-url">app.innvoice.pe</div>
             </div>
+
             <div className="hero-dashboard-content">
+              <div className="hero-icon-rail">
+                <div className="hero-rail-icon hero-rail-icon--user">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0112 0v1"/></svg>
+                </div>
+                <div className="hero-rail-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 8a6 6 0 00-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+                </div>
+                <div className="hero-rail-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                </div>
+                <div className="hero-rail-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+                </div>
+                <div className="hero-rail-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                </div>
+                <div className="hero-rail-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><circle cx="12" cy="17" r=".5"/></svg>
+                </div>
+              </div>
+
               <div className="hero-dashboard-sidebar">
                 <div className="hero-dash-logo">
                   <div className="hero-dash-icon" />
                   <span>Innvoice</span>
                 </div>
                 <div className="hero-dash-nav">
-                  <div className="hero-dash-nav-item">Dashboard</div>
-                  <div className="hero-dash-nav-item">Clientes</div>
-                  <div className="hero-dash-nav-item hero-dash-nav-item--active">Pipeline</div>
-                  <div className="hero-dash-nav-item">Productos</div>
-                  <div className="hero-dash-nav-item">Facturas</div>
-                  <div className="hero-dash-nav-item">Reportes</div>
+                  <div className="hero-dash-nav-section">
+                    <div className="hero-dash-nav-item hero-dash-nav-item--parent">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                      <span className="hero-dash-nav-item--active">Tablero</span>
+                    </div>
+                  </div>
+                  <div className="hero-dash-nav-section">
+                    <div className="hero-dash-nav-item hero-dash-nav-item--parent">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M2 8h20"/></svg>
+                      <span className="hero-dash-nav-link--blue">Ventas</span>
+                      <svg className="hero-dash-chevron" width="10" height="10" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 8l4 4 4-4"/></svg>
+                    </div>
+                    <div className="hero-dash-subnav">
+                      <div className="hero-dash-nav-sub">Comprobantes</div>
+                      <div className="hero-dash-nav-sub">Notas de Credito</div>
+                      <div className="hero-dash-nav-sub">Notas de Debito</div>
+                      <div className="hero-dash-nav-sub">Clientes</div>
+                    </div>
+                  </div>
+                  <div className="hero-dash-nav-section">
+                    <div className="hero-dash-nav-item hero-dash-nav-item--parent">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                      <span>Compras</span>
+                      <svg className="hero-dash-chevron hero-dash-chevron--down" width="10" height="10" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 8l4 4 4-4"/></svg>
+                    </div>
+                  </div>
+                  <div className="hero-dash-nav-section">
+                    <div className="hero-dash-nav-item hero-dash-nav-item--parent">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 00-8 0v2"/></svg>
+                      <span className="hero-dash-nav-link--blue">Inventario</span>
+                      <svg className="hero-dash-chevron" width="10" height="10" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 8l4 4 4-4"/></svg>
+                    </div>
+                    <div className="hero-dash-subnav">
+                      <div className="hero-dash-nav-sub">Articulos</div>
+                      <div className="hero-dash-nav-sub">Grupos</div>
+                      <div className="hero-dash-nav-sub">Variantes</div>
+                      <div className="hero-dash-nav-sub">Almacenes</div>
+                    </div>
+                  </div>
+                  <div className="hero-dash-nav-section">
+                    <div className="hero-dash-nav-item hero-dash-nav-item--parent">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v4"/><path d="M12 14v4"/><path d="M16 14v4"/></svg>
+                      <span>Bancos</span>
+                      <svg className="hero-dash-chevron hero-dash-chevron--down" width="10" height="10" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 8l4 4 4-4"/></svg>
+                    </div>
+                  </div>
+                  <div className="hero-dash-nav-section">
+                    <div className="hero-dash-nav-item hero-dash-nav-item--parent">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                      <span>Informes</span>
+                    </div>
+                  </div>
                 </div>
               </div>
+
               <div className="hero-dashboard-main">
                 <div className="hero-dash-header">
-                  <span className="hero-dash-title">Pipeline de Ventas</span>
-                  <div className="hero-dash-actions">
-                    <span className="hero-dash-btn-small">+ Nuevo</span>
-                    <span className="hero-dash-btn-small hero-dash-btn-small--ghost">Filtrar</span>
+                  <span className="hero-dash-title">Tablero</span>
+                  <div className="hero-dash-date-picker">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                    <span>2026-01-01</span>
+                    <span className="hero-dash-date-sep">-</span>
+                    <span>2026-12-31</span>
                   </div>
                 </div>
-                <div className="hero-dash-cards">
-                  <div className="hero-dash-column">
-                    <div className="hero-dash-col-header">
-                      <span className="hero-dash-col-dot hero-dash-col-dot--blue" />
-                      Prospectos
-                      <span className="hero-dash-count">4</span>
+
+                <div className="hero-dash-tab-bar">
+                  <span className="hero-dash-tab">Tablero</span>
+                  <div className="hero-dash-tab-actions">
+                    <span className="hero-dash-tab-link">Agregar Widget</span>
+                    <span className="hero-dash-tab-link">Nuevo Tablero</span>
+                  </div>
+                </div>
+
+                <div className="hero-dash-widgets">
+                  <div className="hero-dash-widget">
+                    <div className="hero-dash-widget-header">
+                      <span className="hero-dash-widget-title">Cuentas por cobrar</span>
+                      <span className="hero-dash-widget-link">Ver informe</span>
                     </div>
-                    <div className="hero-dash-card">
-                      <span className="hero-dash-card-name">Empresa ABC</span>
-                      <span className="hero-dash-card-value">S/ 12,500</span>
+                    <p className="hero-dash-widget-desc">Cantidad que aun no has recibido de tus clientes</p>
+                    <div className="hero-dash-widget-total">
+                      <span>Total de facturas no pagadas (PEN):</span>
+                      <span className="hero-dash-widget-amount">S/0.00</span>
                     </div>
-                    <div className="hero-dash-card">
-                      <span className="hero-dash-card-name">Tech Solutions</span>
-                      <span className="hero-dash-card-value">S/ 8,200</span>
+                    <div className="hero-dash-progress">
+                      <div className="hero-dash-progress-bar hero-dash-progress-bar--cobrar" />
+                    </div>
+                    <div className="hero-dash-widget-row">
+                      <div className="hero-dash-widget-col">
+                        <span className="hero-dash-widget-label">Por Vencer</span>
+                        <span className="hero-dash-widget-val">S/0.00</span>
+                      </div>
+                      <div className="hero-dash-widget-col">
+                        <span className="hero-dash-widget-label">Vencido</span>
+                        <span className="hero-dash-widget-val">S/0.00 ▾</span>
+                      </div>
                     </div>
                   </div>
-                  <div className="hero-dash-column">
-                    <div className="hero-dash-col-header">
-                      <span className="hero-dash-col-dot hero-dash-col-dot--yellow" />
-                      Negociacion
-                      <span className="hero-dash-count">3</span>
+
+                  <div className="hero-dash-widget">
+                    <div className="hero-dash-widget-header">
+                      <span className="hero-dash-widget-title">Cuentas por pagar</span>
+                      <span className="hero-dash-widget-link">Ver informe</span>
                     </div>
-                    <div className="hero-dash-card">
-                      <span className="hero-dash-card-name">Grupo Delta</span>
-                      <span className="hero-dash-card-value">S/ 24,000</span>
+                    <p className="hero-dash-widget-desc">Cantidad que aun tienes que pagar a tus proveedores</p>
+                    <div className="hero-dash-widget-total">
+                      <span>Total de facturas no pagadas (PEN):</span>
+                      <span className="hero-dash-widget-amount">S/0.00</span>
                     </div>
-                    <div className="hero-dash-card">
-                      <span className="hero-dash-card-name">Constructora Lima</span>
-                      <span className="hero-dash-card-value">S/ 45,800</span>
+                    <div className="hero-dash-progress">
+                      <div className="hero-dash-progress-bar hero-dash-progress-bar--pagar" />
+                    </div>
+                    <div className="hero-dash-widget-row">
+                      <div className="hero-dash-widget-col">
+                        <span className="hero-dash-widget-label">Por Vencer</span>
+                        <span className="hero-dash-widget-val">S/0.00</span>
+                      </div>
+                      <div className="hero-dash-widget-col">
+                        <span className="hero-dash-widget-label">Vencido</span>
+                        <span className="hero-dash-widget-val">S/0.00 ▾</span>
+                      </div>
                     </div>
                   </div>
-                  <div className="hero-dash-column">
-                    <div className="hero-dash-col-header">
-                      <span className="hero-dash-col-dot hero-dash-col-dot--green" />
-                      Cerrados
-                      <span className="hero-dash-count">6</span>
+                </div>
+
+                <div className="hero-dash-chart-section">
+                  <div className="hero-dash-chart-header">
+                    <div>
+                      <span className="hero-dash-widget-title">Flujo de Efectivo</span>
+                      <p className="hero-dash-widget-desc">Dinero entrando y saliendo de su negocio</p>
                     </div>
-                    <div className="hero-dash-card">
-                      <span className="hero-dash-card-name">Minera Sur</span>
-                      <span className="hero-dash-card-value">S/ 67,300</span>
+                    <span className="hero-dash-widget-link">Ver informe</span>
+                  </div>
+                  <div className="hero-dash-chart-legend">
+                    <span className="hero-dash-legend-item"><span className="hero-dash-legend-dot hero-dash-legend-dot--green" />Entrante (PEN)</span>
+                    <span className="hero-dash-legend-item"><span className="hero-dash-legend-dot hero-dash-legend-dot--pink" />Saliente (PEN)</span>
+                    <span className="hero-dash-legend-item"><span className="hero-dash-legend-dot hero-dash-legend-dot--green-dark" />Entrante (USD)</span>
+                    <span className="hero-dash-legend-item"><span className="hero-dash-legend-dot hero-dash-legend-dot--pink-dark" />Saliente (USD)</span>
+                  </div>
+                  <div className="hero-dash-chart">
+                    <div className="hero-dash-chart-y">
+                      <span>S/2.00</span>
+                      <span>S/1.50</span>
+                      <span>S/1.00</span>
+                      <span>S/0.50</span>
+                      <span>S/0.00</span>
                     </div>
-                    <div className="hero-dash-card">
-                      <span className="hero-dash-card-name">Retail Express</span>
-                      <span className="hero-dash-card-value">S/ 15,900</span>
+                    <div className="hero-dash-chart-area">
+                      <div className="hero-dash-chart-grid">
+                        <div className="hero-dash-chart-line" />
+                        <div className="hero-dash-chart-line" />
+                        <div className="hero-dash-chart-line" />
+                        <div className="hero-dash-chart-line" />
+                        <div className="hero-dash-chart-line" />
+                      </div>
+                      <div className="hero-dash-chart-bars">
+                        <div className="hero-dash-bar-group">
+                          <div className="hero-dash-bar hero-dash-bar--green" style={{ height: "6px" }} />
+                          <div className="hero-dash-bar hero-dash-bar--pink" style={{ height: "4px" }} />
+                        </div>
+                        <div className="hero-dash-bar-group">
+                          <div className="hero-dash-bar hero-dash-bar--green" style={{ height: "8px" }} />
+                          <div className="hero-dash-bar hero-dash-bar--pink" style={{ height: "5px" }} />
+                        </div>
+                        <div className="hero-dash-bar-group">
+                          <div className="hero-dash-bar hero-dash-bar--green" style={{ height: "4px" }} />
+                          <div className="hero-dash-bar hero-dash-bar--pink" style={{ height: "3px" }} />
+                        </div>
+                        <div className="hero-dash-bar-group">
+                          <div className="hero-dash-bar hero-dash-bar--green" style={{ height: "10px" }} />
+                          <div className="hero-dash-bar hero-dash-bar--pink" style={{ height: "6px" }} />
+                        </div>
+                        <div className="hero-dash-bar-group">
+                          <div className="hero-dash-bar hero-dash-bar--green" style={{ height: "5px" }} />
+                          <div className="hero-dash-bar hero-dash-bar--pink" style={{ height: "4px" }} />
+                        </div>
+                        <div className="hero-dash-bar-group">
+                          <div className="hero-dash-bar hero-dash-bar--green" style={{ height: "7px" }} />
+                          <div className="hero-dash-bar hero-dash-bar--pink" style={{ height: "3px" }} />
+                        </div>
+                        <div className="hero-dash-bar-group">
+                          <div className="hero-dash-bar hero-dash-bar--green" style={{ height: "9px" }} />
+                          <div className="hero-dash-bar hero-dash-bar--pink" style={{ height: "5px" }} />
+                        </div>
+                        <div className="hero-dash-bar-group">
+                          <div className="hero-dash-bar hero-dash-bar--green" style={{ height: "6px" }} />
+                          <div className="hero-dash-bar hero-dash-bar--pink" style={{ height: "4px" }} />
+                        </div>
+                      </div>
+                      <div className="hero-dash-chart-x">
+                        <span>ene. 2026</span>
+                        <span>abr. 2026</span>
+                        <span>jul. 2026</span>
+                        <span>oct. 2026</span>
+                      </div>
                     </div>
                   </div>
                 </div>
