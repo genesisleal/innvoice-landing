@@ -2,49 +2,69 @@ import "./Pricing.css"
 
 const PLANS = [
   {
-    name: "Starter",
-    tagline: "Para equipos que inician",
-    price: "S/ 99",
+    name: "Free",
+    tagline: "Para micronegocios",
+    price: "S/ 0",
     period: "mes",
+    originalPrice: null,
     features: [
-      "CRM basico",
-      "Reportes esenciales",
-      "Acceso en la nube",
-      "Soporte por email",
-      "3 usuarios",
+      "Hasta 10 facturas/mes",
+      "CRM basico de clientes",
+      "Catalogo de productos",
+      "Soporte por chat",
     ],
     highlighted: false,
+    cta: "Empezar Gratis",
+  },
+  {
+    name: "Starter",
+    tagline: "Para equipos que inician",
+    price: "S/ 29",
+    period: "mes",
+    originalPrice: "S/ 39",
+    features: [
+      "Facturacion ilimitada SUNAT",
+      "CRM completo",
+      "Reportes basicos",
+      "Hasta 3 usuarios",
+      "15 dias de prueba gratis",
+    ],
+    highlighted: false,
+    cta: "Iniciar Prueba",
+  },
+  {
+    name: "Growth",
+    tagline: "Para negocios en crecimiento",
+    price: "S/ 79",
+    period: "mes",
+    originalPrice: "S/ 99",
+    badge: "Mas Popular",
+    features: [
+      "CRM + pipeline avanzado",
+      "ERP: inventario y compras",
+      "Reportes detallados",
+      "Hasta 10 usuarios",
+      "15 dias de prueba gratis",
+    ],
+    highlighted: true,
+    cta: "Iniciar Prueba",
   },
   {
     name: "Pro",
-    tagline: "Para negocios en crecimiento",
-    price: "S/ 249",
+    tagline: "Para operaciones completas",
+    price: "S/ 179",
     period: "mes",
-    badge: "Mas Popular",
+    originalPrice: "S/ 219",
     features: [
-      "Todos los modulos",
-      "Analiticas avanzadas",
-      "API Access",
-      "Soporte prioritario",
+      "ERP completo multi-sucursal",
+      "CRM con automatizaciones",
+      "API completa + webhooks",
+      "Dashboards ejecutivos",
       "Usuarios ilimitados",
-      "Integraciones custom",
-    ],
-    highlighted: true,
-  },
-  {
-    name: "Enterprise",
-    tagline: "Para grandes operaciones",
-    price: "Custom",
-    period: null,
-    features: [
-      "Setup dedicado",
-      "Integraciones a medida",
-      "Soporte 24/7 prioritario",
-      "Seguridad avanzada",
-      "On-premise disponible",
-      "Training y onboarding",
+      "15 dias de prueba gratis",
     ],
     highlighted: false,
+    cta: "Iniciar Prueba",
   },
 ]
 
@@ -58,8 +78,12 @@ export default function Pricing() {
           Para Tu Negocio
         </h2>
         <p className="section-subtitle">
-          Sin sorpresas. Cancela cuando quieras.
+          Sin sorpresas. Cancela cuando quieras. 15 dias de prueba en planes pagos.
         </p>
+
+        <div className="pricing-toggle">
+          <span className="pricing-launch-tag">Precios de lanzamiento</span>
+        </div>
 
         <div className="pricing-grid">
           {PLANS.map((plan) => (
@@ -73,6 +97,9 @@ export default function Pricing() {
               <h3 className="pricing-name">{plan.name}</h3>
               <p className="pricing-tagline">{plan.tagline}</p>
               <div className="pricing-price">
+                {plan.originalPrice && (
+                  <span className="pricing-original">{plan.originalPrice}</span>
+                )}
                 <span className="pricing-amount">{plan.price}</span>
                 {plan.period && (
                   <span className="pricing-period">/ {plan.period}</span>
@@ -92,7 +119,7 @@ export default function Pricing() {
                 href="#cta"
                 className={`btn ${plan.highlighted ? "btn-primary" : "btn-outline"} pricing-btn`}
               >
-                Solicitar Demo
+                {plan.cta}
               </a>
             </div>
           ))}

@@ -1,15 +1,37 @@
+.pricing-toggle {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.pricing-launch-tag {
+  display: inline-block;
+  font-size: 0.813rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--color-primary-ghost);
+  border: 1px solid rgba(0, 68, 215, 0.15);
+  padding: 0.4rem 1.2rem;
+  border-radius: var(--radius-full);
+}
+
 .pricing-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-lg);
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .pricing-grid {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
   }
 }
 
@@ -34,13 +56,13 @@
   padding-top: calc(var(--space-2xl) + 8px);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .pricing-card--highlighted {
-    transform: scale(1.05);
+    transform: scale(1.04);
   }
 
   .pricing-card--highlighted:hover {
-    transform: scale(1.05) translateY(-4px);
+    transform: scale(1.04) translateY(-4px);
   }
 }
 
@@ -69,23 +91,35 @@
 }
 
 .pricing-tagline {
-  font-size: 0.875rem;
+  font-size: 0.813rem;
   color: var(--color-gray-500);
   margin-bottom: var(--space-lg);
 }
 
 .pricing-price {
   margin-bottom: var(--space-xl);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.pricing-original {
+  font-size: 1rem;
+  color: var(--color-gray-400);
+  text-decoration: line-through;
+  font-weight: 500;
 }
 
 .pricing-amount {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
 
 .pricing-period {
-  font-size: 0.938rem;
+  font-size: 0.875rem;
   color: var(--color-gray-400);
   font-weight: 400;
 }
@@ -102,7 +136,7 @@
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  font-size: 0.875rem;
+  font-size: 0.813rem;
   color: var(--color-gray-700);
 }
 

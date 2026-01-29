@@ -1,5 +1,5 @@
 .hero {
-  padding-top: calc(100px + var(--space-3xl));
+  padding-top: calc(60px + var(--space-4xl));
   text-align: center;
 }
 
@@ -272,7 +272,7 @@
 
 @media (min-width: 768px) {
   .hero {
-    padding-top: calc(108px + var(--space-5xl));
+    padding-top: calc(60px + var(--space-5xl));
   }
 
   .hero-dashboard-sidebar {
