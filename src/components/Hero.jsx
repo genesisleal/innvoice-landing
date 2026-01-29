@@ -113,8 +113,7 @@ export default function Hero() {
 
               <div className="hero-dashboard-sidebar">
                 <div className="hero-dash-logo">
-                  <div className="hero-dash-icon" />
-                  <span>Innvoice</span>
+                  <img src="/logo-innvoice.png" alt="Innvoice" className="hero-dash-logo-img" />
                 </div>
                 <div className="hero-dash-nav">
                   <div className="hero-dash-nav-section">
