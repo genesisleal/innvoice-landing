@@ -99,7 +99,7 @@ export default function HowItWorks() {
         </div>
 
         <div className="how-it-works-cta">
-          <a href="#cta" className="btn btn-outline">Solicitar Demo</a>
+          <a href="https://wa.me/51959561015?text=Hola%2C%20quiero%20información%20sobre%20Innvoice" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Solicitar Demo</a>
         </div>
       </div>
     </section>

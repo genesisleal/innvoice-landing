@@ -47,7 +47,7 @@ export default function Hero() {
         </p>
 
         <div className="hero-actions">
-          <a href="#cta" className="btn btn-primary">
+          <a href="https://wa.me/51959561015?text=Hola%2C%20quiero%20información%20sobre%20Innvoice" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
             Solicitar Demo
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

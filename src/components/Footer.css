@@ -106,6 +106,21 @@
   color: var(--color-gray-400);
 }
 
+.footer-credits {
+  font-size: 0.75rem;
+  color: var(--color-gray-400);
+}
+
+.footer-credit-link {
+  color: var(--color-gray-600);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.footer-credit-link:hover {
+  color: var(--color-primary);
+}
+
 .footer-socials {
   display: flex;
   gap: var(--space-md);

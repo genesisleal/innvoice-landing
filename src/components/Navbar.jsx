@@ -32,13 +32,13 @@ export default function Navbar() {
             </li>
           ))}
           <li className="navbar-cta-mobile">
-            <a href="#cta" className="btn btn-primary" onClick={() => setOpen(false)}>
+            <a href="https://wa.me/51959561015?text=Hola%2C%20quiero%20información%20sobre%20Innvoice" target="_blank" rel="noopener noreferrer" className="btn btn-primary" onClick={() => setOpen(false)}>
               Solicitar Demo
             </a>
           </li>
         </ul>
 
-        <a href="#cta" className="btn btn-primary navbar-cta-desktop">
+        <a href="https://wa.me/51959561015?text=Hola%2C%20quiero%20información%20sobre%20Innvoice" target="_blank" rel="noopener noreferrer" className="btn btn-primary navbar-cta-desktop">
           Solicitar Demo
         </a>
 

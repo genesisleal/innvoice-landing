@@ -4,12 +4,12 @@ const FOOTER_LINKS = {
   Producto: [
     { label: "Funciones", href: "#features" },
     { label: "Planes", href: "#pricing" },
-    { label: "Demo", href: "#cta" },
+    { label: "Demo", href: "https://wa.me/51959561015?text=Hola%2C%20quiero%20una%20demo%20de%20Innvoice" },
   ],
   Legal: [
     { label: "Privacidad", href: "#" },
     { label: "Terminos", href: "#" },
-    { label: "Contacto", href: "#cta" },
+    { label: "Contacto", href: "https://wa.me/51959561015?text=Hola%2C%20quiero%20contactar%20con%20Innvoice" },
   ],
 }
 
@@ -40,9 +40,12 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p className="footer-copyright">2025 Innvoice. Todos los derechos reservados.</p>
+          <p className="footer-copyright">© 2026 Innvoice. Todos los derechos reservados.</p>
+          <p className="footer-credits">
+            Diseñado con ❤️ por <a href="https://genesisleal.com" target="_blank" rel="noopener noreferrer" className="footer-credit-link">Genesis Leal</a> y Desarrollado por <a href="https://enigmasac.com" target="_blank" rel="noopener noreferrer" className="footer-credit-link">Enigma Developers</a>
+          </p>
           <div className="footer-socials">
-            <a href="#" className="footer-social" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/innvoice" target="_blank" rel="noopener noreferrer" className="footer-social" aria-label="LinkedIn">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/>
               </svg>

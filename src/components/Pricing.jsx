@@ -374,7 +374,9 @@ export default function Pricing() {
               </ul>
 
               <a
-                href="#cta"
+                href="https://wa.me/51959561015?text=Hola%2C%20quiero%20información%20sobre%20el%20plan%20"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`btn ${plan.highlighted ? "btn-primary" : "btn-outline"} pricing-btn`}
               >
                 {plan.cta}
