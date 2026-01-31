@@ -324,9 +324,8 @@ export default function Pricing() {
         <div className="pricing-grid" key={activeCategory}>
           {category.plans.map((plan, index) => (
             <div
-              key={plan.name}
+              key={`${activeCategory}-${plan.name}`}
               className={`pricing-card pricing-card--tier-${index} ${plan.highlighted ? "pricing-card--highlighted" : ""}`}
-              style={{ animationDelay: `${index * 0.08}s` }}
             >
               {plan.badge && (
                 <span className="pricing-badge">{plan.badge}</span>
