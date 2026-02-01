@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: url("/cursor-innvoice.svg") 4 2, auto;
 }
 
 html {
@@ -35,9 +36,13 @@ a {
 
 button {
   font-family: inherit;
-  cursor: pointer;
+  cursor: url("/cursor-innvoice.svg") 4 2, pointer;
   border: none;
   background: none;
+}
+
+a, button, [role="button"], input[type="submit"] {
+  cursor: url("/cursor-innvoice.svg") 4 2, pointer;
 }
 
 ul {

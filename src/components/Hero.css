@@ -45,7 +45,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  cursor: default;
 }
 
 .hero--loaded .hero-title {
