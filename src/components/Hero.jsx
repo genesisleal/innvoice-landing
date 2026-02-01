@@ -35,10 +35,17 @@ export default function Hero() {
       <div className="container hero-container">
         <span className="hero-badge">CRM + ERP + Facturacion SUNAT</span>
 
-        <h1 className="hero-title">
+        <h1
+          className="hero-title"
+          onMouseMove={(e) => {
+            const rect = e.currentTarget.getBoundingClientRect()
+            const x = ((e.clientX - rect.left) / rect.width) * 100
+            e.currentTarget.style.setProperty("--shine-x", `${x}%`)
+          }}
+        >
           Gestiona Todo Tu Negocio
           <br />
-          Desde Una Sola <span className="accent">Plataforma</span>
+          Desde Una Sola <span className="hero-accent">Plataforma</span>
         </h1>
 
         <p className="hero-description">
