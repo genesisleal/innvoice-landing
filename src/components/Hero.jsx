@@ -31,9 +31,9 @@ export default function Hero() {
   }
 
   return (
-    <section id="hero" className={`hero section ${loaded ? "hero--loaded" : ""}`}>
+    <section id="inicio" className={`hero section ${loaded ? "hero--loaded" : ""}`}>
       <div className="container hero-container">
-        <span className="hero-badge">CRM + ERP + Facturacion SUNAT</span>
+        <span className="hero-badge">Facturacion Electronica + CRM + ERP</span>
 
         <h1
           className="hero-title"
@@ -43,25 +43,25 @@ export default function Hero() {
             e.currentTarget.style.setProperty("--shine-x", `${x}%`)
           }}
         >
-          Gestiona Todo Tu Negocio
+          Factura en SUNAT y Gestiona
           <br />
-          Desde Una Sola <span className="hero-accent">Plataforma</span>
+          Tu Negocio Desde <span className="hero-accent">Un Solo Lugar</span>
         </h1>
 
         <p className="hero-description">
-          Innvoice centraliza ventas, operacion y facturacion electronica en un
-          sistema moderno. Vende, organiza y factura sin complicarte.
+          Emite boletas y facturas electronicas validas ante SUNAT, controla tus
+          ventas, clientes e inventario. Todo desde un sistema simple y moderno.
         </p>
 
         <div className="hero-actions">
-          <a href="https://wa.me/51959561015?text=Hola%2C%20quiero%20información%20sobre%20Innvoice" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-            Solicitar Demo
+          <a href="https://wa.me/51959561015?text=Hola%2C%20quiero%20probar%20Innvoice%20gratis" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            Probar Gratis
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
-          <a href="#features" className="btn btn-outline">
-            Ver Funciones
+          <a href="https://wa.me/51959561015?text=Hola%2C%20quiero%20solicitar%20una%20demo%20de%20Innvoice" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+            Solicitar Demo
           </a>
         </div>
 

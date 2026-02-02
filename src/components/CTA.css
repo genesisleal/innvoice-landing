@@ -1,5 +1,6 @@
 .cta {
   position: relative;
+  overflow: hidden;
 }
 
 .cta-layout {

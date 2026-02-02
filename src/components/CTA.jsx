@@ -31,7 +31,7 @@ export default function CTA() {
   }, [])
 
   return (
-    <section id="cta" className="cta section">
+    <section id="contacto" className="cta section">
       <div className="container">
         <div className="cta-layout">
           <div

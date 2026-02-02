@@ -1,3 +1,7 @@
+.how-it-works {
+  overflow: hidden;
+}
+
 .how-it-works-label {
   display: block;
   text-align: center;

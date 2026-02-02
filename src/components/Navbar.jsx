@@ -2,11 +2,12 @@ import { useState } from "react"
 import "./Navbar.css"
 
 const NAV_LINKS = [
-  { label: "Inicio", href: "#hero" },
-  { label: "Funciones", href: "#features" },
-  { label: "Proceso", href: "#how-it-works" },
-  { label: "Planes", href: "#pricing" },
-  { label: "Contacto", href: "#cta" },
+  { label: "Inicio", href: "#inicio" },
+  { label: "Funciones", href: "#funciones" },
+  { label: "Como Funciona", href: "#como-funciona" },
+  { label: "Planes", href: "#planes" },
+  { label: "FAQ", href: "#preguntas" },
+  { label: "Contacto", href: "#contacto" },
 ]
 
 export default function Navbar() {
@@ -15,7 +16,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="container navbar-inner">
-        <a href="#hero" className="navbar-logo">
+        <a href="#inicio" className="navbar-logo">
           <img src="/logo-innvoice.png" alt="Innvoice" />
         </a>
 

@@ -14,7 +14,7 @@
 
 @media (min-width: 768px) {
   .footer-grid {
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     text-align: left;
   }
 }
@@ -83,6 +83,18 @@
 
 .footer-link:hover {
   color: var(--color-primary);
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-gray-400);
+}
+
+.footer-contact-text {
+  font-size: 0.875rem;
+  color: var(--color-gray-500);
 }
 
 .footer-bottom {

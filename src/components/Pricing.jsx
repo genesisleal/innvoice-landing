@@ -1,6 +1,29 @@
 import { useState } from "react"
 import "./Pricing.css"
 
+const PRICING_FAQ = [
+  {
+    question: "¿Puedo cambiar de plan despues?",
+    answer: "Si. Puedes subir o bajar de plan en cualquier momento. El cambio se aplica de inmediato y solo pagas la diferencia proporcional.",
+  },
+  {
+    question: "¿Puedo cancelar en cualquier momento?",
+    answer: "Si. No hay contratos de permanencia. Puedes cancelar tu plan cuando quieras y seguir usando el servicio hasta que termine tu periodo de facturacion.",
+  },
+  {
+    question: "¿Los precios incluyen IGV?",
+    answer: "Los precios mostrados no incluyen IGV. El impuesto se calcula y muestra al momento del pago.",
+  },
+  {
+    question: "¿Que metodos de pago aceptan?",
+    answer: "Aceptamos tarjetas de credito/debito, transferencias bancarias y Yape/Plin para mayor comodidad.",
+  },
+  {
+    question: "¿Que pasa si necesito mas comprobantes de los que incluye mi plan?",
+    answer: "Puedes subir al siguiente plan o contactarnos para un plan personalizado. Nunca se bloquea tu facturacion sin aviso previo.",
+  },
+]
+
 const ICONS = {
   gift: (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -276,11 +299,12 @@ const CATEGORIES = [
 export default function Pricing() {
   const [activeCategory, setActiveCategory] = useState("facturacion")
   const [isYearly, setIsYearly] = useState(false)
+  const [openFaq, setOpenFaq] = useState(null)
 
   const category = CATEGORIES.find((c) => c.id === activeCategory)
 
   return (
-    <section id="pricing" className="pricing section">
+    <section id="planes" className="pricing section">
       <div className="container">
         <h2 className="section-title">
           Elige el <span className="accent">Plan</span> Perfecto
@@ -317,7 +341,6 @@ export default function Pricing() {
           </button>
           <span className={`pricing-billing-label ${isYearly ? "pricing-billing-label--active" : ""}`}>
             Anual
-            <span className="pricing-discount-badge">15% OFF</span>
           </span>
         </div>
 
@@ -383,6 +406,42 @@ export default function Pricing() {
               </a>
             </div>
           ))}
+        </div>
+
+        <div className="pricing-faq">
+          <h3 className="pricing-faq-title">Preguntas sobre precios</h3>
+          <div className="pricing-faq-list">
+            {PRICING_FAQ.map((item, index) => (
+              <div
+                key={index}
+                className={`pricing-faq-item ${openFaq === index ? "pricing-faq-item--open" : ""}`}
+              >
+                <button
+                  className="pricing-faq-question"
+                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                  aria-expanded={openFaq === index}
+                >
+                  <span>{item.question}</span>
+                  <svg
+                    className="pricing-faq-chevron"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M6 8l4 4 4-4" />
+                  </svg>
+                </button>
+                <div className="pricing-faq-answer-wrapper">
+                  <p className="pricing-faq-answer">{item.answer}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -9,7 +9,8 @@ const FEATURES = [
       </svg>
     ),
     title: "CRM Moderno",
-    description: "Pipeline de ventas, gestion de clientes y seguimiento comercial automatizado.",
+    metric: "+40% en seguimiento",
+    description: "Controla tu pipeline de ventas y dale seguimiento a cada cliente sin perder oportunidades.",
   },
   {
     icon: (
@@ -21,7 +22,8 @@ const FEATURES = [
       </svg>
     ),
     title: "ERP Integrado",
-    description: "Productos, inventario, compras y reportes de negocio en un solo lugar.",
+    metric: "1 solo sistema",
+    description: "Inventario, compras y reportes de negocio centralizados. Sin saltar entre apps.",
   },
   {
     icon: (
@@ -32,7 +34,8 @@ const FEATURES = [
       </svg>
     ),
     title: "Facturacion SUNAT",
-    description: "Emision de comprobantes electronicos alineados a SUNAT Peru.",
+    metric: "-80% errores",
+    description: "Emite boletas y facturas electronicas validas ante SUNAT en segundos, sin errores manuales.",
   },
   {
     icon: (
@@ -41,14 +44,15 @@ const FEATURES = [
         <path d="M16 10v6l4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
-    title: "Automatizacion",
-    description: "Flujos automaticos para seguimiento, cobros y procesos repetitivos.",
+    title: "Ahorra Tiempo",
+    metric: "5+ horas/semana",
+    description: "Automatiza cobros, seguimiento y procesos repetitivos. Dedica tu tiempo a vender.",
   },
 ]
 
 export default function Features() {
   return (
-    <section id="features" className="features section">
+    <section id="funciones" className="features section">
       <div className="container">
         <h2 className="section-title">
           Funciones <span className="accent">Poderosas</span> Que
@@ -63,6 +67,7 @@ export default function Features() {
           {FEATURES.map((feature) => (
             <div key={feature.title} className="feature-card">
               <div className="feature-icon">{feature.icon}</div>
+              <span className="feature-metric">{feature.metric}</span>
               <h3 className="feature-title">{feature.title}</h3>
               <p className="feature-description">{feature.description}</p>
             </div>

@@ -65,7 +65,7 @@ export default function HowItWorks() {
   useScrollReveal(timelineRef)
 
   return (
-    <section id="how-it-works" className="how-it-works section">
+    <section id="como-funciona" className="how-it-works section">
       <div className="container">
         <span className="how-it-works-label">Innvoice en 3 pasos</span>
         <h2 className="section-title">Como Funciona?</h2>

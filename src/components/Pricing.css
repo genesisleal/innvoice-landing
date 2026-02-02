@@ -383,6 +383,91 @@
   50% { left: 150%; }
 }
 
+.pricing-faq {
+  max-width: 640px;
+  margin: var(--space-3xl) auto 0;
+}
+
+.pricing-faq-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  color: var(--color-gray-800);
+}
+
+.pricing-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.pricing-faq-item {
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.pricing-faq-item--open {
+  border-color: rgba(0, 68, 215, 0.2);
+}
+
+.pricing-faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: none;
+  border: none;
+  font-family: var(--font-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-gray-700);
+  text-align: left;
+  cursor: url("/cursor-innvoice.svg") 4 2, pointer;
+  transition: color 0.2s ease;
+}
+
+.pricing-faq-question:hover {
+  color: var(--color-primary);
+}
+
+.pricing-faq-chevron {
+  flex-shrink: 0;
+  color: var(--color-gray-400);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s ease;
+}
+
+.pricing-faq-item--open .pricing-faq-chevron {
+  transform: rotate(180deg);
+  color: var(--color-primary);
+}
+
+.pricing-faq-answer-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pricing-faq-item--open .pricing-faq-answer-wrapper {
+  grid-template-rows: 1fr;
+}
+
+.pricing-faq-answer {
+  overflow: hidden;
+  padding: 0 var(--space-lg);
+  font-size: 0.825rem;
+  color: var(--color-gray-500);
+  line-height: 1.6;
+}
+
+.pricing-faq-item--open .pricing-faq-answer {
+  padding-bottom: var(--space-md);
+}
+
 @media (max-width: 479px) {
   .pricing-category-switcher {
     max-width: 100%;
