@@ -1,6 +1,6 @@
 import './Typography.css'
 
-const BASE = import.meta.env.BASE_URL
+const BRAND_ASSETS = '/brand/'
 
 const FONT_WEIGHTS = [
   { weight: 300, name: 'Light' },
@@ -26,7 +26,7 @@ function Typography() {
         <div className="type-font-card type-font-primary">
           <div className="type-font-badge">Logo & Web</div>
           <div className="type-font-preview">
-            <img src={`${BASE}font-innvoice-negro.svg`} alt="Innvoice Logo" className="type-logo-image" />
+            <img src={`${BRAND_ASSETS}font-innvoice-negro.svg`} alt="Innvoice Logo" className="type-logo-image" />
           </div>
           <div className="type-font-info">
             <h3 className="type-font-name">Montserrat</h3>

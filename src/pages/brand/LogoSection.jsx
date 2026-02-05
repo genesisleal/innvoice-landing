@@ -1,25 +1,25 @@
 import { useState } from 'react'
 import './LogoSection.css'
 
-const BASE = import.meta.env.BASE_URL
+const BRAND_ASSETS = '/brand/'
 
 const LOGO_VARIANTS = {
   complete: [
-    { id: 'original', name: 'Original', file: `${BASE}Innvoice-original.svg`, bg: 'white' },
-    { id: 'azul', name: 'Azul', file: `${BASE}Innvoice-original-azul.svg`, bg: 'white' },
-    { id: 'negro', name: 'Negro', file: `${BASE}Innvoice-original-negro.svg`, bg: 'white' },
-    { id: 'blanco', name: 'Blanco', file: `${BASE}Innvoice-original-blanco.svg`, bg: 'dark' },
+    { id: 'original', name: 'Original', file: `${BRAND_ASSETS}Innvoice-original.svg`, bg: 'white' },
+    { id: 'azul', name: 'Azul', file: `${BRAND_ASSETS}Innvoice-original-azul.svg`, bg: 'white' },
+    { id: 'negro', name: 'Negro', file: `${BRAND_ASSETS}Innvoice-original-negro.svg`, bg: 'white' },
+    { id: 'blanco', name: 'Blanco', file: `${BRAND_ASSETS}Innvoice-original-blanco.svg`, bg: 'dark' },
   ],
   icon: [
-    { id: 'icon-original', name: 'Original', file: `${BASE}Innvoice-faicon-original.svg`, bg: 'white' },
-    { id: 'icon-azul', name: 'Azul', file: `${BASE}Innvoice-faicon-azul.svg`, bg: 'white' },
-    { id: 'icon-negro', name: 'Negro', file: `${BASE}Innvoice-faicon-negro.svg`, bg: 'white' },
-    { id: 'icon-blanco', name: 'Blanco', file: `${BASE}Innvoice-faicon-blanco.png`, bg: 'dark' },
+    { id: 'icon-original', name: 'Original', file: `${BRAND_ASSETS}Innvoice-faicon-original.svg`, bg: 'white' },
+    { id: 'icon-azul', name: 'Azul', file: `${BRAND_ASSETS}Innvoice-faicon-azul.svg`, bg: 'white' },
+    { id: 'icon-negro', name: 'Negro', file: `${BRAND_ASSETS}Innvoice-faicon-negro.svg`, bg: 'white' },
+    { id: 'icon-blanco', name: 'Blanco', file: `${BRAND_ASSETS}Innvoice-faicon-blanco.png`, bg: 'dark' },
   ],
   text: [
-    { id: 'text-azul', name: 'Azul', file: `${BASE}font-innvoice-azul.svg`, bg: 'white' },
-    { id: 'text-negro', name: 'Negro', file: `${BASE}font-innvoice-negro.svg`, bg: 'white' },
-    { id: 'text-blanco', name: 'Blanco', file: `${BASE}font-innvoice-blanco.svg`, bg: 'dark' },
+    { id: 'text-azul', name: 'Azul', file: `${BRAND_ASSETS}font-innvoice-azul.svg`, bg: 'white' },
+    { id: 'text-negro', name: 'Negro', file: `${BRAND_ASSETS}font-innvoice-negro.svg`, bg: 'white' },
+    { id: 'text-blanco', name: 'Blanco', file: `${BRAND_ASSETS}font-innvoice-blanco.svg`, bg: 'dark' },
   ],
 }
 
@@ -184,7 +184,7 @@ function LogoSection() {
         <div className="logo-mascot-grid">
           <div className="logo-mascot-variant">
             <div className="logo-mascot-card">
-              <img src={`${BASE}mascota-hands-up.svg`} alt="Facturin Feliz" className="logo-mascot-image" />
+              <img src={`${BRAND_ASSETS}mascota-hands-up.svg`} alt="Facturin Feliz" className="logo-mascot-image" />
             </div>
             <div className="logo-mascot-variant-info">
               <span className="logo-mascot-variant-name">Feliz</span>
@@ -192,7 +192,7 @@ function LogoSection() {
                 className="logo-mascot-download-sm"
                 onClick={() => {
                   const link = document.createElement('a')
-                  link.href = `${BASE}mascota-hands-up.svg`
+                  link.href = `${BRAND_ASSETS}mascota-hands-up.svg`
                   link.download = 'facturin-feliz.svg'
                   link.click()
                 }}
@@ -203,7 +203,7 @@ function LogoSection() {
           </div>
           <div className="logo-mascot-variant">
             <div className="logo-mascot-card logo-mascot-card-error">
-              <img src={`${BASE}mascota-error.svg`} alt="Facturin Error" className="logo-mascot-image" />
+              <img src={`${BRAND_ASSETS}mascota-error.svg`} alt="Facturin Error" className="logo-mascot-image" />
             </div>
             <div className="logo-mascot-variant-info">
               <span className="logo-mascot-variant-name">Error</span>
@@ -211,7 +211,7 @@ function LogoSection() {
                 className="logo-mascot-download-sm"
                 onClick={() => {
                   const link = document.createElement('a')
-                  link.href = `${BASE}mascota-error.svg`
+                  link.href = `${BRAND_ASSETS}mascota-error.svg`
                   link.download = 'facturin-error.svg'
                   link.click()
                 }}
@@ -237,7 +237,7 @@ function LogoSection() {
         <div className="logo-usage-grid">
           <div className="logo-usage-card logo-usage-correct">
             <div className="logo-usage-preview">
-              <img src={`${BASE}Innvoice-original.svg`} alt="Uso correcto" className="logo-usage-img" />
+              <img src={`${BRAND_ASSETS}Innvoice-original.svg`} alt="Uso correcto" className="logo-usage-img" />
             </div>
             <div className="logo-usage-label">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -248,7 +248,7 @@ function LogoSection() {
           </div>
           <div className="logo-usage-card logo-usage-correct">
             <div className="logo-usage-preview logo-usage-preview-dark">
-              <img src={`${BASE}Innvoice-original-blanco.svg`} alt="Uso sobre oscuro" className="logo-usage-img" />
+              <img src={`${BRAND_ASSETS}Innvoice-original-blanco.svg`} alt="Uso sobre oscuro" className="logo-usage-img" />
             </div>
             <div className="logo-usage-label">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -259,7 +259,7 @@ function LogoSection() {
           </div>
           <div className="logo-usage-card logo-usage-wrong">
             <div className="logo-usage-preview">
-              <img src={`${BASE}Innvoice-original.svg`} alt="No estirar" className="logo-usage-img logo-usage-stretched" />
+              <img src={`${BRAND_ASSETS}Innvoice-original.svg`} alt="No estirar" className="logo-usage-img logo-usage-stretched" />
             </div>
             <div className="logo-usage-label">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -270,7 +270,7 @@ function LogoSection() {
           </div>
           <div className="logo-usage-card logo-usage-wrong">
             <div className="logo-usage-preview">
-              <img src={`${BASE}Innvoice-original.svg`} alt="No rotar" className="logo-usage-img logo-usage-rotated" />
+              <img src={`${BRAND_ASSETS}Innvoice-original.svg`} alt="No rotar" className="logo-usage-img logo-usage-rotated" />
             </div>
             <div className="logo-usage-label">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
