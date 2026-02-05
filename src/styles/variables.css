@@ -25,7 +25,7 @@
   );
   --color-cta-gradient: linear-gradient(135deg, #0044d7 0%, #1a5ce8 50%, #3a7bff 100%);
 
-  --font-primary: "Outfit", system-ui, sans-serif;
+  --font-primary: "Montserrat", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
   --space-xs: 0.25rem;
