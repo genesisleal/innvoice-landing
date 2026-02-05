@@ -1,0 +1,83 @@
+<svg viewBox="-10 -30 260 340" xmlns="http://www.w3.org/2000/svg" width="400" height="500">
+  <style>
+    @keyframes mascotFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    .mascot-body { animation: mascotFloat 3s ease-in-out infinite; }
+    @keyframes waveLeft {
+      0%, 100% { transform: rotate(0deg); transform-origin: 48px 90px; }
+      25% { transform: rotate(-12deg); transform-origin: 48px 90px; }
+      75% { transform: rotate(12deg); transform-origin: 48px 90px; }
+    }
+    @keyframes waveRight {
+      0%, 100% { transform: rotate(0deg); transform-origin: 192px 90px; }
+      25% { transform: rotate(12deg); transform-origin: 192px 90px; }
+      75% { transform: rotate(-12deg); transform-origin: 192px 90px; }
+    }
+    .arm-left { animation: waveLeft 1.2s ease-in-out infinite; }
+    .arm-right { animation: waveRight 1.2s ease-in-out infinite; }
+  </style>
+
+  <g class="mascot-body">
+    <g class="arm-left">
+      <path d="M48 90 C28 78, 12 50, 18 20" stroke="#374151" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <ellipse cx="16" cy="16" rx="10" ry="9" fill="#fff" stroke="#374151" stroke-width="2"/>
+      <circle cx="8" cy="10" r="4.5" fill="#fff" stroke="#374151" stroke-width="1.5"/>
+      <circle cx="16" cy="7" r="4.5" fill="#fff" stroke="#374151" stroke-width="1.5"/>
+      <circle cx="24" cy="10" r="4.5" fill="#fff" stroke="#374151" stroke-width="1.5"/>
+    </g>
+
+    <g class="arm-right">
+      <path d="M192 90 C212 78, 228 50, 222 20" stroke="#374151" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <ellipse cx="224" cy="16" rx="10" ry="9" fill="#fff" stroke="#374151" stroke-width="2"/>
+      <circle cx="216" cy="10" r="4.5" fill="#fff" stroke="#374151" stroke-width="1.5"/>
+      <circle cx="224" cy="7" r="4.5" fill="#fff" stroke="#374151" stroke-width="1.5"/>
+      <circle cx="232" cy="10" r="4.5" fill="#fff" stroke="#374151" stroke-width="1.5"/>
+    </g>
+
+    <rect x="44" y="10" width="152" height="190" rx="22" fill="#fff" stroke="#374151" stroke-width="3"/>
+
+    <path d="M78 50 Q85 42 94 50" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M146 50 Q153 42 162 50" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <circle cx="86" cy="72" r="20" fill="#fff" stroke="#374151" stroke-width="2.5"/>
+    <circle cx="154" cy="72" r="20" fill="#fff" stroke="#374151" stroke-width="2.5"/>
+
+    <g>
+      <circle cx="90" cy="76" r="8" fill="#1f2937"/>
+      <circle cx="93" cy="71" r="3" fill="#fff"/>
+    </g>
+    <g>
+      <circle cx="150" cy="76" r="8" fill="#1f2937"/>
+      <circle cx="153" cy="71" r="3" fill="#fff"/>
+    </g>
+
+    <ellipse cx="58" cy="90" rx="9" ry="6" fill="#fecaca" opacity="0.5"/>
+    <ellipse cx="182" cy="90" rx="9" ry="6" fill="#fecaca" opacity="0.5"/>
+
+    <path d="M104 102 Q120 116 136 102" stroke="#374151" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <rect x="72" y="130" width="96" height="16" rx="8" fill="#1f2937"/>
+    <circle cx="86" cy="138" r="2.8" fill="#6b7280"/>
+    <circle cx="98" cy="138" r="2.8" fill="#6b7280"/>
+    <circle cx="110" cy="138" r="2.8" fill="#6b7280"/>
+    <circle cx="122" cy="138" r="2.8" fill="#6b7280"/>
+    <circle cx="134" cy="138" r="2.8" fill="#6b7280"/>
+    <circle cx="146" cy="138" r="2.8" fill="#6b7280"/>
+    <circle cx="158" cy="138" r="2.8" fill="#6b7280"/>
+
+    <rect x="72" y="156" width="38" height="4" rx="2" fill="#d1d5db"/>
+    <rect x="72" y="164" width="26" height="4" rx="2" fill="#e5e7eb"/>
+
+    <rect x="126" y="154" width="11" height="16" rx="2.5" fill="#6ee7b7"/>
+    <rect x="140" y="160" width="11" height="10" rx="2.5" fill="#6ee7b7" opacity="0.6"/>
+    <rect x="154" y="152" width="11" height="18" rx="2.5" fill="#6ee7b7" opacity="0.8"/>
+
+    <line x1="100" y1="202" x2="94" y2="248" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+    <line x1="140" y1="202" x2="146" y2="248" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+
+    <ellipse cx="90" cy="258" rx="16" ry="9" fill="#6EE7B7" stroke="#374151" stroke-width="1.8"/>
+    <ellipse cx="150" cy="258" rx="16" ry="9" fill="#6EE7B7" stroke="#374151" stroke-width="1.8"/>
+  </g>
+</svg>

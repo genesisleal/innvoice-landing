@@ -1,0 +1,165 @@
+.color-group {
+  margin-bottom: var(--space-3xl);
+}
+
+.color-group-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-gray-900);
+  margin-bottom: var(--space-xs);
+}
+
+.color-group-description {
+  font-size: 0.9375rem;
+  color: var(--color-gray-500);
+  margin-bottom: var(--space-lg);
+}
+
+.color-grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.color-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.color-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.color-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.color-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.color-card-light .color-swatch {
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.color-swatch {
+  height: 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-copied {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.2s ease;
+}
+
+.color-copied svg {
+  width: 32px;
+  height: 32px;
+  color: var(--color-white);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.color-info {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.color-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-gray-900);
+}
+
+.color-value {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-gray-500);
+}
+
+.color-var {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-gray-400);
+  background: var(--color-gray-100);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  width: fit-content;
+}
+
+.color-gradients {
+  margin-top: var(--space-3xl);
+}
+
+.gradient-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+.gradient-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.gradient-preview {
+  height: 120px;
+}
+
+.gradient-bg {
+  background: linear-gradient(180deg, #fff 0%, #eef1fa 50%, #e8ecf8 100%);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.gradient-cta {
+  background: linear-gradient(135deg, #0044d7 0%, #1a5ce8 50%, #3a7bff 100%);
+}
+
+.gradient-info {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.gradient-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-gray-900);
+}
+
+.gradient-value {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-gray-500);
+  background: var(--color-gray-50);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  word-break: break-all;
+}
+
+@media (max-width: 768px) {
+  .color-grid-4,
+  .color-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

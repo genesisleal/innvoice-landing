@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "dev:brand": "cd branding && npm run dev",
+    "build": "vite build && npm run build:brand",
+    "build:brand": "cd branding && npm run build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
