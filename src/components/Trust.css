@@ -1,0 +1,115 @@
+.trust-label {
+  display: block;
+  text-align: center;
+  font-size: 0.813rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-sm);
+}
+
+.trust-flow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  max-width: 880px;
+  margin: 0 auto var(--space-2xl);
+}
+
+.trust-flow-step {
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-100);
+  border-radius: var(--radius-lg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.trust-flow-step:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: rgba(0, 68, 215, 0.15);
+}
+
+.trust-flow-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-primary-ghost);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trust-flow-step:hover .trust-flow-icon {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px var(--color-primary-glow);
+}
+
+.trust-flow-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+  color: var(--color-gray-900);
+}
+
+.trust-flow-desc {
+  font-size: 0.813rem;
+  color: var(--color-gray-500);
+  line-height: 1.5;
+}
+
+.trust-indicators {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.trust-indicator {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.813rem;
+  color: var(--color-gray-600);
+  background: var(--color-white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-gray-200);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.trust-indicator:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.trust-indicator svg {
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+
+.trust-indicator:hover svg {
+  color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+  .trust-flow {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 479px) {
+  .trust-flow-step {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .trust-indicator {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.75rem;
+  }
+}

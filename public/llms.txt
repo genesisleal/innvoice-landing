@@ -1,0 +1,38 @@
+# Innvoice
+
+> Sistema de facturación electrónica SUNAT, CRM y ERP para empresas en Perú.
+
+Innvoice es una plataforma web que permite a empresas peruanas emitir boletas y facturas electrónicas válidas ante SUNAT, gestionar clientes, inventario y ventas desde un solo sistema.
+
+## Funcionalidades principales
+
+- Facturación electrónica SUNAT (boletas y facturas)
+- CRM: gestión de clientes y pipeline de ventas
+- ERP: inventario, compras y reportes de negocio
+- Dashboard de ventas y métricas
+- Exportación de datos a Excel/CSV
+- Acceso multi-usuario desde cualquier dispositivo
+
+## Planes - Solo Facturación
+
+- INNVO FREE: S/ 0/mes — 10 comprobantes, 3 usuarios
+- INNVO: S/ 34/mes — 50 comprobantes, 5 usuarios
+- INNVO PRO: S/ 49/mes — 150 comprobantes, 8 usuarios (más popular)
+- INNVO PREMIUM: S/ 89/mes — 400 comprobantes, 15 usuarios
+
+## Planes - Facturación + Gestión
+
+- INNVO FREE GESTIÓN: S/ 0/mes — 10 comprobantes, 4 usuarios
+- INNVO GESTIÓN: S/ 69/mes — 250 comprobantes, 6 usuarios
+- INNVO PRO GESTIÓN: S/ 99/mes — 600 comprobantes, 10 usuarios (más popular)
+- INNVO PREMIUM GESTIÓN: S/ 139/mes — 1200 comprobantes, 20 usuarios
+
+Todos los planes anuales tienen 15% de descuento.
+
+## Mercado objetivo
+
+Empresas peruanas que necesitan facturación electrónica SUNAT, desde micronegocios hasta empresas medianas en crecimiento.
+
+## Sitio web
+
+https://innvoice.pe
