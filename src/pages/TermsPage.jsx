@@ -225,11 +225,11 @@ export default function TermsPage() {
               <h2 className="terms-section-title">Periodo de Prueba</h2>
             </div>
             <div className="terms-section-body">
-              <p>Innvoice ofrece un periodo de prueba gratuito de <strong>15 días</strong> para que los nuevos Usuarios puedan evaluar la Plataforma. Durante este periodo:</p>
+              <p>Innvoice ofrece un periodo de prueba gratuito de <strong>7 días</strong> para que los nuevos Usuarios puedan evaluar la Plataforma. Durante este periodo:</p>
               <ul className="terms-list">
                 <li>El Usuario tendrá acceso a las funcionalidades del plan seleccionado para evaluación.</li>
                 <li>No se requerirá información de pago para activar el periodo de prueba.</li>
-                <li>Al finalizar los 15 días, el Usuario deberá seleccionar y pagar un plan para continuar utilizando los servicios.</li>
+                <li>Al finalizar los 7 días, el Usuario deberá seleccionar y pagar un plan para continuar utilizando los servicios.</li>
                 <li>Si el Usuario no contrata un plan al término de la prueba, su cuenta será suspendida pero sus datos se conservarán por un periodo de 30 días adicionales.</li>
               </ul>
               <p>El periodo de prueba está disponible una sola vez por empresa (identificada por su RUC). Innvoice se reserva el derecho de modificar las condiciones del periodo de prueba.</p>

@@ -16,7 +16,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "¿Puedo probar Innvoice antes de pagar?",
-    answer: "Si. Todos los planes incluyen 15 dias gratis para que pruebes la plataforma sin compromiso. No necesitas tarjeta de credito para empezar.",
+    answer: "Si. Todos los planes incluyen 7 dias gratis para que pruebes la plataforma sin compromiso. No necesitas tarjeta de credito para empezar.",
   },
   {
     question: "¿Que tipos de comprobantes puedo emitir?",

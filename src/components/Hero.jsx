@@ -76,13 +76,13 @@ export default function Hero() {
               <line x1="12" y1="1" x2="12" y2="23"/>
               <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
             </svg>
-            <span>15 dias gratis</span>
+            <span>7 dias gratis</span>
           </div>
         </div>
 
         <div className="hero-actions">
-          <a href="https://wa.me/51959561015?text=Hola%2C%20quiero%20probar%20Innvoice%2015%20dias%20gratis" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-            Probar 15 Dias Gratis
+          <a href="https://wa.me/51959561015?text=Hola%2C%20quiero%20probar%20Innvoice%207%20dias%20gratis" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            Probar 7 Dias Gratis
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>

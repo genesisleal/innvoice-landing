@@ -30,21 +30,24 @@ const PLANS = [
     name: "EMPRENDEDOR",
     tagline: "Ideal para independientes que recien empiezan",
     monthly: { original: "S/ 79", price: "S/ 60", discount: "24% OFF" },
-    yearly: { original: "S/ 948", price: "S/ 576", discount: "39% OFF", savings: "Ahorras S/ 144 al año" },
+    yearly: { original: "S/ 720", price: "S/ 660", discount: "Paga 11 meses", savings: "Ahorras S/ 60 al año" },
     features: [
       { text: "Boletas y facturas electronicas (SUNAT)", included: true },
-      { text: "Hasta 100 comprobantes/mes", included: true },
-      { text: "1 usuario", included: true },
+      { text: "Comprobantes ilimitados", included: true },
+      { text: "Usuarios ilimitados", included: true },
+      { text: "Multi-sucursal", included: true },
       { text: "Gestion basica de clientes", included: true },
       { text: "Reporte de ventas mensual", included: true },
       { text: "Soporte por email", included: true },
-      { text: "Inventario avanzado", included: false },
-      { text: "Multiples usuarios", included: false },
-      { text: "Reportes avanzados", included: false },
+      { text: "API / Integraciones", included: false },
+      { text: "Modulo ERP completo", included: false },
+      { text: "Gestion avanzada de inventario", included: false },
+      { text: "Soporte dedicado", included: false },
+      { text: "Implementacion personalizada", included: false },
     ],
     cta: "Elegir Plan",
     ctaLink: "https://wa.me/51959561015?text=Hola%2C%20quiero%20información%20sobre%20el%20plan%20Emprendedor",
-    nudge: "Recomendado solo si emites menos de 3 comprobantes diarios.",
+    nudge: null,
   },
   {
     tier: "pro",
@@ -52,12 +55,10 @@ const PLANS = [
     badge: "Mas Popular",
     tagline: "Ideal para negocios en crecimiento",
     monthly: { original: "S/ 189", price: "S/ 120", discount: "37% OFF" },
-    yearly: { original: "S/ 2,268", price: "S/ 1,080", discount: "52% OFF", savings: "Ahorras S/ 360 al año" },
+    yearly: { original: "S/ 1,440", price: "S/ 1,320", discount: "Paga 11 meses", savings: "Ahorras S/ 120 al año" },
     socialProof: "El 80% de nuestros clientes elige este plan",
     features: [
       { text: "Todo lo del plan Emprendedor", included: true },
-      { text: "Hasta 500 comprobantes/mes", included: true },
-      { text: "5 usuarios", included: true },
       { text: "Control de inventario en tiempo real", included: true },
       { text: "Reportes avanzados de ventas", included: true },
       { text: "CRM integrado", included: true },
@@ -74,19 +75,17 @@ const PLANS = [
     tier: "enterprise",
     name: "EMPRESA",
     tagline: "Para empresas con multiples sucursales",
-    monthly: { original: null, price: "Cotizar", discount: null },
-    yearly: { original: null, price: "Cotizar", discount: null, savings: null },
+    monthly: { original: "S/ 449", price: "S/ 300", discount: "33% OFF" },
+    yearly: { original: "S/ 3,600", price: "S/ 3,300", discount: "Paga 11 meses", savings: "Ahorras S/ 300 al año" },
     features: [
-      { text: "Comprobantes ilimitados", included: true },
-      { text: "Usuarios ilimitados", included: true },
-      { text: "Multi-sucursal", included: true },
+      { text: "Todo lo del plan Pro", included: true },
       { text: "API / Integraciones", included: true },
       { text: "Modulo ERP completo", included: true },
       { text: "Gestion avanzada de inventario", included: true },
       { text: "Soporte dedicado", included: true },
       { text: "Implementacion personalizada", included: true },
     ],
-    cta: "Hablar con Asesor",
+    cta: "Elegir Plan",
     ctaLink: "https://wa.me/51959561015?text=Hola%2C%20quiero%20información%20sobre%20el%20plan%20Empresa",
     nudge: null,
   },
@@ -112,7 +111,7 @@ export default function Pricing() {
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
           </svg>
-          15 dias gratis en todos los planes — sin tarjeta de credito
+          7 dias gratis en todos los planes — sin tarjeta de credito
         </div>
 
         <div className="pricing-billing-toggle">
@@ -155,9 +154,7 @@ export default function Pricing() {
                   <span className="pricing-amount">
                     {isYearly ? plan.yearly.price : plan.monthly.price}
                   </span>
-                  {plan.tier !== "enterprise" && (
-                    <span className="pricing-period">/ {isYearly ? "año" : "mes"}</span>
-                  )}
+                  <span className="pricing-period">/ {isYearly ? "año" : "mes"}</span>
                   {(isYearly ? plan.yearly.discount : plan.monthly.discount) && (
                     <span className="pricing-discount-tag">
                       {isYearly ? plan.yearly.discount : plan.monthly.discount}
