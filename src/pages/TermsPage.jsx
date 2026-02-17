@@ -111,7 +111,7 @@ export default function TermsPage() {
               <h2 className="terms-section-title">Objeto y Alcance</h2>
             </div>
             <div className="terms-section-body">
-              <p>Los presentes Términos y Condiciones regulan la relación entre <strong>Innvoice</strong> (en adelante, "la Plataforma"), operada por Enigma Developers S.A.C. con domicilio en Lima, Perú, y cualquier persona natural o jurídica que acceda, se registre o utilice los servicios ofrecidos a través de <strong>innvoice.pe</strong> y <strong>app.innvoice.pe</strong> (en adelante, "el Usuario").</p>
+              <p>Los presentes Términos y Condiciones regulan la relación entre <strong>Innvoice</strong> (en adelante, "la Plataforma"), con domicilio en Lima, Perú, y cualquier persona natural o jurídica que acceda, se registre o utilice los servicios ofrecidos a través de <strong>innvoice.pe</strong> y <strong>app.innvoice.pe</strong> (en adelante, "el Usuario").</p>
               <p>Estos términos aplican a todos los servicios proporcionados por la Plataforma, incluyendo pero no limitándose a: facturación electrónica homologada por SUNAT, gestión de relaciones con clientes (CRM), planificación de recursos empresariales (ERP), y cualquier funcionalidad adicional que se incorpore en el futuro.</p>
               <p>El uso de la Plataforma implica la aceptación plena e incondicional de estos Términos y Condiciones. Si no estás de acuerdo con alguna de estas disposiciones, te solicitamos que no utilices nuestros servicios.</p>
             </div>
@@ -262,7 +262,7 @@ export default function TermsPage() {
               <h2 className="terms-section-title">Propiedad Intelectual</h2>
             </div>
             <div className="terms-section-body">
-              <p>Todos los derechos de propiedad intelectual sobre la Plataforma, incluyendo pero no limitándose al software, diseño, interfaces, logotipos, marcas, contenido y documentación, son propiedad exclusiva de Enigma Developers S.A.C. o sus licenciantes.</p>
+              <p>Todos los derechos de propiedad intelectual sobre la Plataforma, incluyendo pero no limitándose al software, diseño, interfaces, logotipos, marcas, contenido y documentación, son propiedad exclusiva de Innvoice o sus licenciantes.</p>
               <p>La suscripción a Innvoice otorga al Usuario una licencia limitada, no exclusiva, no transferible y revocable para utilizar la Plataforma conforme a estos Términos y al Plan contratado.</p>
               <p>Los Datos del Usuario son y seguirán siendo propiedad del Usuario. Innvoice no adquiere ningún derecho de propiedad sobre la información que el Usuario ingrese o genere en la Plataforma.</p>
             </div>

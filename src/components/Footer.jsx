@@ -8,7 +8,7 @@ const FOOTER_LINKS = {
     { label: "Demo", href: "https://wa.me/51959561015?text=Hola%2C%20quiero%20una%20demo%20de%20Innvoice" },
   ],
   Legal: [
-    { label: "Privacidad", href: "#" },
+    { label: "Privacidad", href: "/privacidad" },
     { label: "Terminos", href: "/terminos-y-condiciones" },
   ],
 }
@@ -72,7 +72,7 @@ export default function Footer() {
                 <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/>
               </svg>
             </a>
-            <a href="#" className="footer-social" aria-label="Instagram">
+            <a href="https://www.instagram.com/innvoice.pe" target="_blank" rel="noopener noreferrer" className="footer-social" aria-label="Instagram">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="2" y="2" width="20" height="20" rx="5"/>
                 <circle cx="12" cy="12" r="5"/>
