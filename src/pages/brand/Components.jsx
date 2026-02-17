@@ -94,10 +94,9 @@ function Components() {
                 <div className="demo-input-group">
                   <label className="demo-label">Plan</label>
                   <select className="demo-select">
-                    <option>INNVO FREE</option>
-                    <option>INNVO</option>
-                    <option>INNVO PRO</option>
-                    <option>INNVO PREMIUM</option>
+                    <option>EMPRENDEDOR</option>
+                    <option>PRO</option>
+                    <option>EMPRESA</option>
                   </select>
                 </div>
               </div>
