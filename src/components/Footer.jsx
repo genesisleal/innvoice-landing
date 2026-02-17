@@ -9,7 +9,7 @@ const FOOTER_LINKS = {
   ],
   Legal: [
     { label: "Privacidad", href: "#" },
-    { label: "Terminos", href: "#" },
+    { label: "Terminos", href: "/terminos-y-condiciones" },
   ],
 }
 
