@@ -30,7 +30,7 @@ const PLANS = [
     name: "EMPRENDEDOR",
     tagline: "Ideal para independientes que recien empiezan",
     monthly: { original: "S/ 79", price: "S/ 60", discount: "24% OFF" },
-    yearly: { original: "S/ 720", price: "S/ 660", discount: "Paga 11 meses", savings: "Ahorras S/ 60 al año" },
+    yearly: { original: "S/ 720", price: "S/ 660", discount: "8% OFF", savings: "Ahorras S/ 60 al año" },
     features: [
       { text: "Boletas y facturas electronicas (SUNAT)", included: true },
       { text: "Comprobantes ilimitados", included: true },
@@ -55,7 +55,7 @@ const PLANS = [
     badge: "Mas Popular",
     tagline: "Ideal para negocios en crecimiento",
     monthly: { original: "S/ 189", price: "S/ 120", discount: "37% OFF" },
-    yearly: { original: "S/ 1,440", price: "S/ 1,320", discount: "Paga 11 meses", savings: "Ahorras S/ 120 al año" },
+    yearly: { original: "S/ 1,440", price: "S/ 1,320", discount: "8% OFF", savings: "Ahorras S/ 120 al año" },
     socialProof: "El 80% de nuestros clientes elige este plan",
     features: [
       { text: "Todo lo del plan Emprendedor", included: true },
@@ -76,7 +76,7 @@ const PLANS = [
     name: "EMPRESA",
     tagline: "Para empresas con multiples sucursales",
     monthly: { original: "S/ 449", price: "S/ 300", discount: "33% OFF" },
-    yearly: { original: "S/ 3,600", price: "S/ 3,300", discount: "Paga 11 meses", savings: "Ahorras S/ 300 al año" },
+    yearly: { original: "S/ 3,600", price: "S/ 3,300", discount: "8% OFF", savings: "Ahorras S/ 300 al año" },
     features: [
       { text: "Todo lo del plan Pro", included: true },
       { text: "API / Integraciones", included: true },
