@@ -8,12 +8,6 @@
   box-sizing: border-box;
 }
 
-.landing-page *,
-.landing-page *::before,
-.landing-page *::after {
-  cursor: url("/cursor-innvoice.svg") 4 2, auto;
-}
-
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
@@ -52,13 +46,6 @@ button {
   font-family: inherit;
   border: none;
   background: none;
-}
-
-.landing-page button,
-.landing-page a,
-.landing-page [role="button"],
-.landing-page input[type="submit"] {
-  cursor: url("/cursor-innvoice.svg") 4 2, pointer;
 }
 
 ul {

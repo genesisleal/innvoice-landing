@@ -41,7 +41,7 @@
   font-weight: 600;
   color: var(--color-gray-800);
   text-align: left;
-  cursor: url("/cursor-innvoice.svg") 4 2, pointer;
+  cursor: pointer;
   transition: color 0.2s ease;
 }
 
