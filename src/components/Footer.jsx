@@ -10,6 +10,7 @@ const FOOTER_LINKS = {
   Legal: [
     { label: "Privacidad", href: "/privacidad" },
     { label: "Terminos", href: "/terminos-y-condiciones" },
+    { label: "Libro de Reclamaciones", href: "/libro-de-reclamaciones" },
   ],
 }
 

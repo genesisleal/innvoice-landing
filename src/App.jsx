@@ -3,6 +3,7 @@ import LandingPage from './pages/LandingPage'
 import BrandPage from './pages/BrandPage'
 import TermsPage from './pages/TermsPage'
 import PrivacyPage from './pages/PrivacyPage'
+import ComplaintsBookPage from './pages/ComplaintsBookPage'
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Route path="/brand" element={<BrandPage />} />
       <Route path="/terminos-y-condiciones" element={<TermsPage />} />
       <Route path="/privacidad" element={<PrivacyPage />} />
+      <Route path="/libro-de-reclamaciones" element={<ComplaintsBookPage />} />
     </Routes>
   )
 }
