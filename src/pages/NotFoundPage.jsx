@@ -34,7 +34,7 @@ export default function NotFoundPage() {
               Volver al inicio
             </Link>
             <a
-              href="https://wa.me/51999999999?text=Hola,%20necesito%20ayuda%20con%20Innvoice"
+              href="https://wa.me/51959561015?text=Hola,%20necesito%20ayuda%20con%20Innvoice"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline"
